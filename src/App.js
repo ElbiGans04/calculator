@@ -12,8 +12,13 @@ export default function App() {
 
     // Check Nilai fullmode 
     if (fullMode === true) {
+      let isOperation = checkIfSame(val);
+    
+      // Set Full Mode
       setFullMode(false);
-      if(val !== null) setActions(val === false ? [] : [val]);
+
+      if(isOperation) setActions((prev) => [...prev, val]);
+      else if(val !== null) setActions(val === false ? [] : [val]);
 
       // Jika null
       if(val === null) {
