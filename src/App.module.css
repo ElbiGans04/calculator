@@ -17,13 +17,14 @@
 
 .display {
   width: 100%;
+  height: 20vh;
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   padding: 1rem;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .display div {
@@ -49,7 +50,7 @@
     "satu dua tiga kali additional"
     "nol enter enter bagi additional";
   /* justify-content: center; */
-  height: 60vh;
+  height: 50vh;
   gap: 0.1rem;
 }
 
